@@ -486,3 +486,4 @@ def fastvit_ma36(pretrained=False, in_chans=3, **kwargs):
     )
     model.default_cfg = default_cfgs["fastvit_m"]
     return model
+
