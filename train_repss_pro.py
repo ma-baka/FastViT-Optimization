@@ -12,6 +12,8 @@ from collections import OrderedDict
 from contextlib import suppress
 from datetime import datetime
 import numpy as np
+# [修改] 导入 Day 7 的小切片专用模型文件
+import models.fastvit_repss_small
 
 import torch
 import torch.nn as nn
