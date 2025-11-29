@@ -37,10 +37,11 @@ from timm.scheduler import create_scheduler
 from timm.utils import ApexScaler, NativeScaler
 
 # 引入 RepSS 模型
+# [修改] 引用小切片专用模型文件
 try:
-    from models.fastvit_repss import fastvit_ma36 
+    from models.fastvit_repss_small import fastvit_ma36_small_patch
 except ImportError:
-    print("[ERROR] 找不到 models/fastvit_repss.py，请检查 models 文件夹！")
+    print("[ERROR] 找不到 models/fastvit_repss_small.py，请检查 models 文件夹！")
     exit(1)
 
 try:
